@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+nav{
+    display: grid;
+    grid-area: n;
+    background-color: black;
+
+}
+aside{
+    display: grid;
+    grid-area: as;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+article{
+    display: grid;
+    grid-area: ar;
+
+}
+footer{
+    display: grid;
+    grid-area: f;
+}
+nav li{
+    list-style: none;
+    font-size: 15px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+nav li a{
+    text-decoration: none;
+    text-align: left;
+    color: white;
+}
+img{
+    max-width: 100px;
+}
+
+main{
+    max-width: 1000px;
+       display: grid;
+       margin: auto;
+       grid-template-columns: 330px 330px 330px;
+       grid-template-areas:    "as as as"
+                               "ar ar ar"
+                               "f f f";
+   }
+@media screen and (max-width:600px){
+    main{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:    "n"
+                                "as"
+                                "ar"
+                                "f";
+    }
+}
