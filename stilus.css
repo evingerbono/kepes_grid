@@ -9,19 +9,59 @@ nav{
 
 }
 aside{
-    display: grid;
+    display:grid;
     grid-area: as;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+
+}
+aside ul li{
+    text-align: left;
+    font-size: 20px;
+}
+aside ul {
+    list-style-image: url("./kepek/relacio.jpeg");
+}
+
+.cegmeret{
+    padding: 1px;
+}
+.ipar{
+    border-left: 2px solid red;
+}
+.uzleti{
+    border-left: 2px solid red;
 }
 article{
-    display: grid;
+    display:grid;
     grid-area: ar;
-
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    background-color: black;
+    padding: 3px;
+}
+.szoveg h2{
+    font-size: 50px;
+    border-bottom: 2px solid red;
+}
+.szoveg p{
+    font-size: 20px;
+}
+.folyamat img{
+    max-width: 100%;
 }
 footer{
     display: grid;
     grid-area: f;
+    background-color: black;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 20px;
+}
+footer img{
+    max-width: 100%;
 }
 nav li{
     list-style: none;
@@ -37,6 +77,9 @@ nav li a{
     text-align: left;
     color: white;
 }
+nav li :hover{
+    background-color: rgb(255, 0, 0);
+}
 img{
     max-width: 100px;
 }
@@ -45,8 +88,10 @@ main{
     max-width: 1000px;
        display: grid;
        margin: auto;
-       grid-template-columns: 330px 330px 330px;
-       grid-template-areas:    "as as as"
+       padding: 30px;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-areas:    "n n n"
+                               "as as as"
                                "ar ar ar"
                                "f f f";
    }
